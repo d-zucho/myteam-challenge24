@@ -7,7 +7,7 @@ import MobileMenu from '../MobileMenu'
 
 const Header = () => {
   return (
-    <header>
+    <header className='pb-12'>
       <MaxWidthWrapper>
         <div className='flex items-center justify-between py-12'>
           <div className='flex justify-between items-center w-full'>
