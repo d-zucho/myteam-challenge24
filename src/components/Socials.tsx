@@ -6,7 +6,12 @@ type FooterSocialsProps = {
 }
 
 export const FooterSocials = ({ classNames }: FooterSocialsProps) => (
-  <div className={cn(`flex gap-2 justify-center lg:ml-auto`, classNames)}>
+  <div
+    className={cn(
+      `flex gap-2 justify-center md:justify-end lg:ml-auto`,
+      classNames
+    )}
+  >
     <Image
       src={'/assets/icon-facebook.svg'}
       height={24}

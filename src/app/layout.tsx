@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={cn(livvic.className, 'bg-midnightGreen text-white')}>
+      <body
+        className={cn(livvic.className, 'bg-midnightGreen text-white relative')}
+      >
         <Header />
         {children}
         <Footer />
