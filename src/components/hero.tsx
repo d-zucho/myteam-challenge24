@@ -1,7 +1,11 @@
+'use client'
 import Image from 'next/image'
 import MaxWidthWrapper from './MaxWidthWrapper'
+import { useMediaQuery } from 'usehooks-ts'
 
 const Hero = () => {
+  const isDekstop = useMediaQuery('(min-width: 1024px)')
+
   return (
     <section id='hero' className='h-[400px] relative'>
       <MaxWidthWrapper>
@@ -32,14 +36,25 @@ const Hero = () => {
           />
         </div>
         <div>
-          <Image
-            src={'/assets/bg-pattern-home-2.svg'}
-            alt='pattern'
-            height={200}
-            width={200}
-            aria-hidden={true}
-            className='absolute bottom-0 mx-auto right-[15%]'
-          />
+          {isDekstop ? (
+            <Image
+              src='/assets/bg-pattern-home-2.svg'
+              alt='pattern'
+              height={200}
+              width={200}
+              aria-hidden={true}
+              className='absolute bottom-0 right-32'
+            />
+          ) : (
+            <Image
+              src={'/assets/bg-pattern-home-2.svg'}
+              alt='pattern'
+              height={400}
+              width={400}
+              aria-hidden={true}
+              className='absolute bottom-0 mx-auto right-[25%]w-[400px]'
+            />
+          )}
         </div>
       </MaxWidthWrapper>
     </section>
