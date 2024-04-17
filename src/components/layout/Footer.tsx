@@ -5,7 +5,7 @@ import { FooterSocials } from '../Socials'
 
 const Footer = () => {
   return (
-    <footer className='py-14 bg-darkGreen'>
+    <footer className='py-14 bg-darkGreen '>
       <MaxWidthWrapper>
         <div
           id='footer-container'

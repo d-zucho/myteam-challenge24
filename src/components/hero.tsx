@@ -11,7 +11,7 @@ const Hero = () => {
       <MaxWidthWrapper>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0 text-center'>
           <div>
-            <h1 className='text-[40px] md:text-[64px] lg:text-[80px] xl:text-[100px] font-bold leading-  10 md:leading-[56px] lg:text-left lg:leading-[100px]'>
+            <h1 className='text-[40px] md:text-[64px] lg:text-[80px] xl:text-[100px] font-bold 10 md:leading-[56px] lg:text-left lg:leading-[100px]'>
               Find the <br /> best{' '}
               <span className=' text-lightCoral'>talent</span>
             </h1>

@@ -20,7 +20,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={cn(livvic.className, 'bg-midnightGreen text-white relative')}
+        className={cn(
+          livvic.className,
+          'bg-midnightGreen text-white relative min-h-screen'
+        )}
       >
         <Header />
         {children}
