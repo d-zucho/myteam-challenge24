@@ -4,3 +4,11 @@ export type aboutFact = {
   title: string
   description: string
 }
+
+export type testimonial = {
+  key: number
+  image: string
+  name: string
+  position: string
+  quote: string
+}
