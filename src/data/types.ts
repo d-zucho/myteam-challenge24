@@ -12,3 +12,11 @@ export type testimonial = {
   position: string
   quote: string
 }
+
+export type director = {
+  key: number
+  image: string
+  name: string
+  position: string
+  description: string
+}
