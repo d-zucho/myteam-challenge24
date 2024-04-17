@@ -16,20 +16,25 @@ export default function MobileMenu({}: Props) {
         <SheetContent className='bg-policeBlue w-[350px] text-center pt-20'>
           <div className='space-y-10'>
             <div className='font-semibold flex flex-col space-y-6'>
-              <Link
-                href='/'
-                className='hover:scale-105 transition-all hover:text-lightCoral'
-              >
-                home
-              </Link>
-              <Link
-                href='/'
-                className='hover:scale-105 transition-all hover:text-lightCoral'
-              >
-                about
-              </Link>
+              <SheetClose asChild>
+                <Link
+                  href='/'
+                  className='hover:scale-105 transition-all hover:text-lightCoral'
+                >
+                  home
+                </Link>
+              </SheetClose>
+
+              <SheetClose asChild>
+                <Link
+                  href='/about'
+                  className='hover:scale-105 transition-all hover:text-lightCoral'
+                >
+                  about
+                </Link>
+              </SheetClose>
             </div>
-            <SheetClose>
+            <SheetClose asChild>
               <Link
                 href={'/contact'}
                 className={cn(

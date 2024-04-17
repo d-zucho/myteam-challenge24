@@ -20,3 +20,9 @@ export type director = {
   position: string
   description: string
 }
+
+export type client = {
+  key: number
+  image: string
+  name: string
+}

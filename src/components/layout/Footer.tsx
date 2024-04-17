@@ -23,7 +23,7 @@ const Footer = () => {
 
             <div className='flex font-semibold justify-between my-6'>
               <Link href='/'>home</Link>
-              <Link href='/'>about</Link>
+              <Link href='/about'>about</Link>
             </div>
           </div>
 

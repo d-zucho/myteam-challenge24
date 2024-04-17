@@ -1,4 +1,4 @@
-import { aboutFact, testimonial, director } from './types'
+import { aboutFact, testimonial, director, client } from './types'
 
 export const aboutFacts: aboutFact[] = [
   {
@@ -99,5 +99,33 @@ export const directors: director[] = [
     position: 'Head of Talent',
     description:
       '“Empowered teams create truly amazing products. Set the north star and let them follow it.”',
+  },
+]
+
+export const clients: client[] = [
+  {
+    name: 'The verge',
+    image: '/assets/logo-the-verge.png',
+    key: 1,
+  },
+  {
+    name: 'Jakarta Post',
+    image: '/assets/logo-jakarta-post.png',
+    key: 2,
+  },
+  {
+    name: 'The guardian',
+    image: '/assets/logo-the-guardian.png',
+    key: 3,
+  },
+  {
+    name: 'Tech Radar',
+    image: '/assets/logo-tech-radar.png',
+    key: 4,
+  },
+  {
+    name: 'Gadgets now',
+    image: '/assets/logo-gadgets-now.png',
+    key: 5,
   },
 ]

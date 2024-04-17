@@ -24,7 +24,7 @@ const Header = () => {
               <div className='hidden md:flex justify-between w-full'>
                 <div className=' space-x-6 font-semibold'>
                   <Link href='/'>home</Link>
-                  <Link href='/'>about</Link>
+                  <Link href='/about'>about</Link>
                 </div>
               </div>
               {/* </div> */}
