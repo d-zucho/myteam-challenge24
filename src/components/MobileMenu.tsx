@@ -13,7 +13,7 @@ export default function MobileMenu({}: Props) {
         <SheetTrigger>
           <Menu size={32} />
         </SheetTrigger>
-        <SheetContent className='bg-policeBlue w-[350px] text-center pt-20'>
+        <SheetContent className='bg-policeBlue w-[70vw] text-center pt-20'>
           <div className='space-y-10'>
             <div className='font-semibold flex flex-col space-y-6'>
               <SheetClose asChild>

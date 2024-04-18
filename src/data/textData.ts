@@ -1,4 +1,4 @@
-import { aboutFact, testimonial, director, client } from './types'
+import { aboutFact, testimonial, director, client, contactTopic } from './types'
 
 export const aboutFacts: aboutFact[] = [
   {
@@ -127,5 +127,23 @@ export const clients: client[] = [
     name: 'Gadgets now',
     image: '/assets/logo-gadgets-now.png',
     key: 5,
+  },
+]
+
+export const contactTopics: contactTopic[] = [
+  {
+    key: 1,
+    topic: 'The quality of our talent network',
+    image: '/assets/icon-person.svg',
+  },
+  {
+    key: 2,
+    topic: 'Usage & implementation of our software',
+    image: '/assets/icon-cog.svg',
+  },
+  {
+    key: 3,
+    topic: 'How we help drive innovation',
+    image: '/assets/icon-chart.svg',
   },
 ]

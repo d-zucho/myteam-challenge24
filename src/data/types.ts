@@ -26,3 +26,9 @@ export type client = {
   image: string
   name: string
 }
+
+export type contactTopic = {
+  key: number
+  topic: string
+  image: string
+}
