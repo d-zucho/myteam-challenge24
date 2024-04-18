@@ -1,5 +1,6 @@
 import { director } from '@/data/types'
 import Image from 'next/image'
+import DirectorInfo from './DirectorInfo'
 
 const DirectorCard = ({ name, image, position, description }: director) => {
   return (
@@ -15,15 +16,16 @@ const DirectorCard = ({ name, image, position, description }: director) => {
         <h3 className='text-raptureBlue font-semibold text-lg'>{name}</h3>
         <span className='italic'>{position}</span>
       </div>
-      <div className='bg-lightCoral w-fit p-4 rounded-full inset-x-0 absolute m-auto -bottom-[22px]'>
-        <Image
+      <div className=''>
+        {/* <Image
           src={'/assets/icon-cross.svg'}
           width={15}
           height={15}
           alt='details'
           aria-hidden='true'
           className=''
-        />
+        /> */}
+        <DirectorInfo description={description} />
       </div>
     </article>
   )

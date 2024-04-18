@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import MaxWidthWrapper from './MaxWidthWrapper'
 import { Button } from './ui/button'
+import Link from 'next/link'
 
 const HomeCTA = () => {
   return (
@@ -9,12 +10,14 @@ const HomeCTA = () => {
         <h2 className='text-3xl md:text-4xl text-sacrementroGreen font-bold'>
           Ready to get started?
         </h2>
-        <Button
-          variant={'outline'}
-          className='rounded-full py-5 px-6 bg-transparent border-sacrementroGreen border-2 text-lg text-sacrementroGreen font-semibold mx-auto hover:bg-sacrementroGreen hover:text-white transition-all hover:border-transparent mt-6 active:scale-105'
-        >
-          contact us
-        </Button>
+        <Link href={'/contact'}>
+          <Button
+            variant={'outline'}
+            className='rounded-full py-5 px-6 bg-transparent border-sacrementroGreen border-2 text-lg text-sacrementroGreen font-semibold mx-auto hover:bg-sacrementroGreen hover:text-white transition-all hover:border-transparent mt-6 active:scale-105'
+          >
+            contact us
+          </Button>
+        </Link>
       </MaxWidthWrapper>
       <Image
         src={'/assets/bg-pattern-home-6-about-5.svg'}

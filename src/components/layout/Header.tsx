@@ -29,7 +29,7 @@ const Header = () => {
               </div>
               {/* </div> */}
               <Link
-                href={'/'}
+                href={'/contact'}
                 className={cn(
                   buttonVariants({ variant: 'outline' }),
                   'bg-transparent rounded-full hidden md:block font-semibold'
