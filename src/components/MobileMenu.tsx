@@ -1,8 +1,15 @@
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from './ui/sheet'
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetFooter,
+  SheetTrigger,
+} from './ui/sheet'
 import { Menu } from 'lucide-react'
 import Link from 'next/link'
 import { buttonVariants } from './ui/button'
 import { cn } from '@/lib/utils'
+import Image from 'next/image'
 
 type Props = {}
 
@@ -13,8 +20,8 @@ export default function MobileMenu({}: Props) {
         <SheetTrigger>
           <Menu size={32} />
         </SheetTrigger>
-        <SheetContent className='bg-policeBlue w-[70vw] text-center pt-20'>
-          <div className='space-y-10'>
+        <SheetContent className='bg-policeBlue w-[70vw] text-center pt-20 h-screen'>
+          <div className='space-y-10 '>
             <div className='font-semibold flex flex-col space-y-6'>
               <SheetClose asChild>
                 <Link
@@ -46,6 +53,15 @@ export default function MobileMenu({}: Props) {
               </Link>
             </SheetClose>
           </div>
+          <SheetFooter className='absolute bottom-0 inset-x-0'>
+            <Image
+              src={'/assets/bg-pattern-about-1-mobile-nav-1.svg'}
+              width={200}
+              height={200}
+              alt={'bg-pattern-about-1-mobile-nav-1.svg'}
+              className='translate-x-1/2 absolute bottom-0 right-0'
+            />
+          </SheetFooter>
         </SheetContent>
       </Sheet>
     </div>
