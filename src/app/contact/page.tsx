@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const ContactPage = () => {
   return (
-    <div className=''>
+    <div className='relative overflow-hidden'>
       <MaxWidthWrapper>
         {/* text container */}
         <div className='grid lg:grid-cols-2'>
@@ -37,6 +37,14 @@ const ContactPage = () => {
           <ContactForm />
         </div>
       </MaxWidthWrapper>
+      <Image
+        src={'/assets/bg-pattern-contact-2.svg'}
+        alt='pattern'
+        aria-hidden='true'
+        height={200}
+        width={200}
+        className='absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2'
+      />
     </div>
   )
 }
